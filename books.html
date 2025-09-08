@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Books</title>
+    <style>
+ body {
+           -family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .nav-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-menu li {
+            margin: 0 15px;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            transition: background 0.3s;
+        }
+        .nav-menu a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .book-cover {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>My Favorite Books</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Classic</td>
+                </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>Dystopian</td>
+                </tr>
+                <tr>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>Fiction</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Featured Book: The Great Gatsby</h2>
+        <img src="great-gatsby-cover.jpg" alt="The Great Gatsby Book Cover" class="book-cover">
+        
+        <h3>Video Review</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" title="Video Review" frameborder="0" allowfullscreen></iframe>
+        
+        <h3>Author Interview</h3>
+        <audio controls>
+            <source src="author-interview.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My Favorite Books</p>
+    </footer>
+</body>
+</html>
